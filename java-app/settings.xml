@@ -13,7 +13,7 @@
         <repository>
           <id>github</id>
           <name>GitHub Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/christoffernissen/edhoc-prototype/com/mycompany/app/</url>
+          <url>https://maven.pkg.github.com/christoffernissen/githubpackagesdemo</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>false</enabled></snapshots>
         </repository>
