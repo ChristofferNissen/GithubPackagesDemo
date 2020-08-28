@@ -6,7 +6,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>EDHOC-prototype</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.1</version>  
 
   <name>EDHOC-prototype</name>
   <!-- FIXME change it to the project's website -->
@@ -16,7 +16,7 @@
     <repository>
       <id>github</id>
       <name>GitHub GithubPackagesDemo Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/christoffernissen/EDHOC-prototype</url> <!-- githubpackagesdemo -->
+      <url>https://maven.pkg.github.com/christoffernissen/edhoc-prototype</url> <!-- githubpackagesdemo -->
     </repository>
   </distributionManagement> 
 
