@@ -12,6 +12,14 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub GithubPackagesDemo Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/githubpackagesdemo/releases</url>
+    </repository>
+  </distributionManagement> 
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
@@ -50,7 +58,7 @@
       <artifactId>jaxb-api</artifactId>
       <version>2.1</version>
   </dependency>
-  
+
   <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
