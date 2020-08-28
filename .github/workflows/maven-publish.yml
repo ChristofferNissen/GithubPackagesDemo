@@ -7,7 +7,8 @@ on:
   push:
     branches: 
       - master
-
+    paths:
+      - 'java-app/*'
 
 jobs:
   build:
@@ -26,7 +27,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file java-app/EDHOC-prototype/pom.xml
 
+    - name: Check contents of GITHUB_WORKSPACE
+      run: ls -lah $GITHUB_WORKSPACE
+
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy # -s $GITHUB_WORKSPACE/java-app/settings.xml
+      run: mvn deploy -s $GITHUB_WORKSPACE/java-app/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
