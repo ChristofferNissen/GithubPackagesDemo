@@ -16,7 +16,7 @@
     <repository>
       <id>github</id>
       <name>GitHub GithubPackagesDemo Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/githubpackagesdemo/EDHOC-prototype</url>
+      <url>https://maven.pkg.github.com/christoffernissen/EDHOC-prototype</url> <!-- githubpackagesdemo -->
     </repository>
   </distributionManagement> 
 
