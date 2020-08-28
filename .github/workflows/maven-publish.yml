@@ -34,7 +34,7 @@ jobs:
       run: ls -lah $GITHUB_WORKSPACE/java-app/
 
     - name: Publish to GitHub Packages Apache Maven
-      working-directory: ./java-app/
+      working-directory: ./java-app/EDHOC-prototype/
       run: mvn deploy -s $GITHUB_WORKSPACE/java-app/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}

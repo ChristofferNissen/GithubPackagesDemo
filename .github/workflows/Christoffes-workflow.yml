@@ -7,7 +7,6 @@ on:
     paths:
       - 'app/*'
 
-
 jobs:
   build:
     # Job name is Greeting
