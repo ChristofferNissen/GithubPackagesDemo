@@ -3,12 +3,12 @@
 
 name: Maven Package
 
-# on:
-#   push:
-#     branches: 
-#       - master
-#     paths:
-#       - 'java-app/*'
+on:
+  push:
+    branches: 
+      - master
+    # paths:
+    #   - 'java-app/*'
 
 jobs:
   build:
