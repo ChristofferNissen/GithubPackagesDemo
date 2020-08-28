@@ -10,6 +10,7 @@ on:
     paths:
       - 'java-app/*'
       - '.github/workflows/maven-publish.yml'
+      - 'java-app/EDHOC-prototype/*'
 
 jobs:
   build:
