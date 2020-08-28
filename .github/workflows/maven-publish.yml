@@ -30,8 +30,11 @@ jobs:
     - name: Check contents of GITHUB_WORKSPACE
       run: ls -lah $GITHUB_WORKSPACE
 
+    - name: Check contents of GITHUB_WORKSPACE/java-app/
+      run: ls -lah $GITHUB_WORKSPACE/java-app/
+
     - name: Publish to GitHub Packages Apache Maven
-      working-directory: ./java-app
+      working-directory: ./java-app/
       run: mvn deploy -s $GITHUB_WORKSPACE/java-app/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
