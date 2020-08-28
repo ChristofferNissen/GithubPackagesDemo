@@ -7,8 +7,9 @@ on:
   push:
     branches: 
       - master
-    # paths:
-    #   - 'java-app/*'
+    paths:
+      - 'java-app/*'
+      - '.github/workflows/maven-publish.yml'
 
 jobs:
   build:

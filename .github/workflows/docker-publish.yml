@@ -12,6 +12,7 @@ on:
 
     paths:
       - 'app/*'
+      - '.github/workflows/docker-publish.yml'
 
   # Run tests for any PRs.
   pull_request:
