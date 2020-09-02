@@ -13,11 +13,16 @@
   <url>http://www.example.com</url>
 
   <distributionManagement>
+
     <repository>
-      <id>github</id>
-      <name>GitHub GithubPackagesDemo Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/christoffernissen/githubpackagesdemo</url> <!-- githubpackagesdemo -->
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>libs-release</name>
+      <url>http://localhost:8081/artifactory/libs-release</url>
     </repository>
+
   </distributionManagement> 
 
   <properties>

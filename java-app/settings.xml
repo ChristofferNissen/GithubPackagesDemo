@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
-  
-  <activeProfiles>
-    <activeProfile>github</activeProfile>
-  </activeProfiles>
-
-  <profiles>
-    <profile>
-      <id>github</id>
-        <repository>
-          <id>github</id>
-          <name>GitHub Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/christoffernissen/githubpackagesdemo</url>
-          <releases><enabled>true</enabled></releases>
-          <snapshots><enabled>false</enabled></snapshots>
-        </repository>
-      </repositories>
-    </profile>
-  </profiles>
-
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <id>github</id>
-      <username>${env.GITHUB_ACTOR}</username>
-      <password>${env.GITHUB_TOKEN}</password>
+      <username>admin</username>
+      <password>AP481973dWq2PBdt5DTAHhUxL8fmFjBEh3Hz7T</password>
+      <id>central</id>
     </server>
     <server>
-      <id>gpg.passphrase</id>
-      <passphrase>${env.GPG_PASSPHRASE}</passphrase>
+      <username>admin</username>
+      <password>AP481973dWq2PBdt5DTAHhUxL8fmFjBEh3Hz7T</password>
+      <id>snapshots</id>
     </server>
   </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://localhost:8081/artifactory/libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-snapshot</name>
+          <url>http://localhost:8081/artifactory/libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://localhost:8081/artifactory/libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-snapshot</name>
+          <url>http://localhost:8081/artifactory/libs-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
 </settings>
