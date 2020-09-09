@@ -6,7 +6,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>EDHOC-prototype</artifactId>
-  <version>1.0.3</version>  
+  <version>1.0.4</version>  
 
   <name>EDHOC-prototype</name>
   <!-- FIXME change it to the project's website -->
@@ -19,8 +19,8 @@
         <enabled>false</enabled>
       </snapshots>
       <id>central</id>
-      <name>libs-release</name>
-      <url>http://localhost:8081/artifactory/libs-release</url>
+      <name>Maven-test</name>
+      <url>http://localhost:7081/repository/Maven-test/</url>
     </repository>
 
   </distributionManagement> 

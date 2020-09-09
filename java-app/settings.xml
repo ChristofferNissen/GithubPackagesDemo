@@ -4,7 +4,7 @@
   <servers>
     <server>
       <username>admin</username>
-      <password>AP481973dWq2PBdt5DTAHhUxL8fmFjBEh3Hz7T</password>
+      <password>spal3sud@hox6YAIR</password>
       <id>central</id>
     </server>
     <server>
@@ -21,8 +21,8 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>libs-release</name>
-          <url>http://localhost:8081/artifactory/libs-release</url>
+          <name>Maven-test</name>
+          <url>http://localhost:7081/repository/Maven-test/</url>
         </repository>
         <repository>
           <snapshots />
