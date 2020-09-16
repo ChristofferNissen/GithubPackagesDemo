@@ -4,7 +4,7 @@
   <servers>
     <server>
       <username>admin</username>
-      <password>9bbbb1b5-d203-4dea-999d-943622f542bf</password>
+      <password>88931157-28d6-423b-a4c6-fcc978bbfd2e</password>
       <id>central</id>
     </server>
     <server>
@@ -22,7 +22,7 @@
            </snapshots>
           <id>central</id>
           <name>maven-test</name>
-          <url>http://localhost/maven2/maven-test/</url>
+	  <url>http://localhost:7081/repository/maven-test/</url>
         </repository>
         <repository>
           <snapshots />

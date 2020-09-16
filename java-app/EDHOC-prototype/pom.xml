@@ -6,7 +6,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>EDHOC-prototype</artifactId>
-  <version>1.1.1</version> 
+  <version>0.1.1</version> 
 
   <name>EDHOC-prototype</name>
   <!-- FIXME change it to the project's website -->
@@ -20,7 +20,7 @@
       </snapshots>
       <id>central</id>
       <name>maven-test</name>
-      <url>http://localhost/maven2/maven-test/</url>
+      <url>http://localhost:7081/repository/maven-test/</url>
     </repository>
 
   </distributionManagement> 
