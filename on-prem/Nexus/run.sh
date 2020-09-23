@@ -1,0 +1,1 @@
+docker run -d -p 7081:8081 --name nexus sonatype/nexus3

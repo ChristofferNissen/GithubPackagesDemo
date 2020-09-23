@@ -6,18 +6,23 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>EDHOC-prototype</artifactId>
-  <version>1.0.3</version>  
+  <version>0.2.1</version> 
 
   <name>EDHOC-prototype</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <distributionManagement>
+
     <repository>
-      <id>github</id>
-      <name>GitHub GithubPackagesDemo Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/christoffernissen/githubpackagesdemo</url> <!-- githubpackagesdemo -->
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>maven-test</name>
+      <url>http://localhost:7081/repository/maven-test/</url>
     </repository>
+
   </distributionManagement> 
 
   <properties>
